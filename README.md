@@ -16,7 +16,6 @@ mkdir -p tools/{cli-tools,dev-tools}
 
 
 # Initilaize the workspace project crates
-# Initialize each crate
 cargo init core/blockchain-core --lib
 cargo init core/consensus --lib
 cargo init core/crypto --lib
