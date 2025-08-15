@@ -8,7 +8,7 @@ P2P Blockchain Service w/ Off-Chain-to-On-Chain Relayer Service using Rust, Rust
 # Create the workspace structure
 mkdir -p blockchain/{blockchain-core,consensus,crypto}
 mkdir -p storage/{scylla-adapter,storage-traits}
-mkdir -p validation/{on-chain-validator,off-chain-validator,validation-common}
+mkdir -p validation/{on-chain-validator,off-chain-validator,validation-core}
 mkdir -p relayer/{relayer-server,relayer-api,gateway-service}
 mkdir -p p2p/{p2p-network,rpc-server}
 mkdir -p frontend/{web-ui,dioxus-admin}
