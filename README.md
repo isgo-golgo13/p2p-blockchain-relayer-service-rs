@@ -23,10 +23,10 @@ cargo init storage/scylla-adapter --lib
 cargo init storage/storage-traits --lib
 cargo init validation/on-chain-validator --lib
 cargo init validation/off-chain-validator --lib
-cargo init validation/validation-common --lib
+cargo init validation/validation-core --lib
 cargo init relayer/relayer-server --bin
 cargo init relayer/relayer-api --lib
-cargo init relayer/bridge-logic --lib
+cargo init relayer/gateway-core --lib
 cargo init p2p/p2p-network --lib
 cargo init p2p/rpc-server --bin
 cargo init frontend/dioxus-admin --bin
