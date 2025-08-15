@@ -4,13 +4,13 @@ use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
 use std::collections::HashMap;
 
-pub mod block;
+pub mod transaction_block;
 pub mod transaction;
 pub mod chain;
 pub mod merkle;
 
 // Re-export main types
-pub use block::*;
+pub use transaction_block::*;
 pub use transaction::*;
 pub use chain::*;
 pub use merkle::*;
