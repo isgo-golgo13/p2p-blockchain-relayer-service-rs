@@ -16,9 +16,9 @@ mkdir -p tools/{cli-tools,dev-tools}
 
 
 # Initilaize the workspace project crates
-cargo init core/blockchain-core --lib
-cargo init core/consensus --lib
-cargo init core/crypto --lib
+cargo init blockchain/blockchain-core --lib
+cargo init blockchain/consensus --lib
+cargo init blockchain/crypto --lib
 cargo init storage/scylla-adapter --lib
 cargo init storage/storage-traits --lib
 cargo init validation/on-chain-validator --lib

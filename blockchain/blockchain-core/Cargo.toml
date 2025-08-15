@@ -1,6 +1,23 @@
 [package]
 name = "blockchain-core"
-version = "0.1.0"
-edition = "2024"
+version.workspace = true
+edition.workspace = true
+description = "Core blockchain data structures and logic"
 
 [dependencies]
+# Workspace dependencies
+serde = { workspace = true }
+serde_json = { workspace = true }
+bincode = { workspace = true }
+sha2 = { workspace = true }
+chrono = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+# Additional dependencies
+hex = "0.4"
+rand = "0.8"
+
+[dev-dependencies]
+proptest = { workspace = true }
+tokio = { workspace = true, features = ["test-util"] }
