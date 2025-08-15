@@ -270,3 +270,48 @@ CREATE MATERIALIZED VIEW IF NOT EXISTS recent_transactions AS
 -- Consider using user-defined types (UDT) for complex nested data
 ```
 
+
+## Create Transaction Visualization Dash
+
+```shell
+# Step 12: Create React + D3.js Frontend Project
+
+# Navigate to the frontend directory
+cd frontend/tx-ui-dash
+
+# Create React application with JavaScript
+npm create vite@latest . -- --template react
+
+# Install D3.js and related dependencies
+npm install d3
+
+# Install additional UI and utility libraries
+npm install axios
+npm install @emotion/react @emotion/styled
+npm install @mui/material @mui/icons-material
+npm install react-router-dom
+npm install recharts
+npm install react-query
+npm install date-fns
+npm install lodash
+
+# Install development dependencies
+npm install --save-dev eslint-plugin-react-hooks
+npm install --save-dev prettier
+
+# Create directory structure
+mkdir -p src/components/{BlockVisualization,TransactionList,Dashboard,Layout}
+mkdir -p src/services
+mkdir -p src/types
+mkdir -p src/hooks
+mkdir -p src/utils
+mkdir -p src/styles
+mkdir -p public/assets
+
+# Create environment configuration
+echo "REACT_APP_API_BASE_URL=http://localhost:8080" > .env.local
+echo "REACT_APP_WEBSOCKET_URL=ws://localhost:8081" >> .env.local
+echo "REACT_APP_BLOCKCHAIN_NAME=RolexChain" >> .env.local
+
+echo "React project initialized with D3.js and JavaScript"
+```

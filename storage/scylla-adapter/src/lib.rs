@@ -11,10 +11,10 @@ use uuid::Uuid;
 
 pub mod syclla_config;
 pub mod scylla_queries;
-pub mod dao;
+pub mod model;
 
 use syclla_config::ScyllaConfig;
-use dao::*;
+use model::*;
 
 /// Main ScyllaDB adapter for blockchain storage
 pub struct ScyllaAdapter {
