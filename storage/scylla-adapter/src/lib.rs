@@ -10,7 +10,7 @@ use tokio::sync::RwLock;
 use uuid::Uuid;
 
 pub mod syclla_config;
-pub mod scyella_queries;
+pub mod scylla_queries;
 pub mod dao;
 
 use syclla_config::ScyllaConfig;
